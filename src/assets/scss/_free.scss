@@ -1,0 +1,28 @@
+@import "_variables";
+
+.lp {
+  &-free {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: linear-gradient(to right, $color-atomic_tangerine, $color-brilliant-Rose);
+    color: $color-white;
+    text-align: center;
+    &__title {
+      font-size: 55px;
+      line-height: 60px;
+      font-weight: bold;
+      margin-bottom: 26px;
+    }
+    &__desc {
+      font-size: 20px;
+      line-height: 30px;
+      @include font-montserrat;
+      width: 70%;
+      margin: 0 auto 40px;
+    }
+    &__button {
+      background: $color-white;
+      border: none;
+    }
+  }
+}

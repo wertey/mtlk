@@ -42,15 +42,15 @@
       align-items: center;
       &__item {
         text-align: center;
-        &-icon img {
+        &_icon img {
           width: 30%;
           height: auto;
           margin-bottom: 20px;
         }
-        &-title {
+        &_title {
           margin-bottom: 14px;
         }
-        &-desc {
+        &_desc {
           color: $color-dove-gray;
         }
       }
