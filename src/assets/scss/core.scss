@@ -1,2 +1,11 @@
 @import "_reset";
+@import "_container";
+@import "_fonts";
+@import "_header";
+@import "_variables";
+@import "_input";
+@import "_promo";
 
+body {
+  @include font-lato;
+}

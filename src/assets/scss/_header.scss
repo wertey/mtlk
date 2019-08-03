@@ -1,0 +1,95 @@
+@import "_variables";
+
+.lp {
+  &-header {
+    color: $color-white;
+    background: url(../img/eq-office-03.jpg)no-repeat;
+    position: relative;
+    height: 100vh;
+    z-index: 10;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(20,39,41,.6);
+      z-index: 5;
+    }
+    &-inner {
+      position: relative;
+      z-index: 10;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      &-logo {
+        flex: 1;
+        font-size: 24px;
+        font-weight: bold;
+        max-height: 100px;
+        height: 100%;
+        padding-top: 35px;
+      }
+      &-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__title, &__subtitle {
+          text-align: center;
+        }
+        &__title {
+          font-weight: bold;
+          font-size: 56px;
+          line-height: 60px;
+          margin-bottom: 16px;
+        }
+        &__subtitle {
+          font-size: 18px;
+          line-height: 32px;
+          @include font-montserrat;
+          margin-bottom: 44px;
+          max-width: 70%;
+        }
+      }
+      &-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &__input {
+          padding-right: 40px;
+        }
+        &__input input {
+          border: none;
+          background: rgba(255,255,255,.25);
+          color: $color-white;
+          @include font-montserrat;
+          font-size: 16px;
+          width: 100%;
+          padding: 16px 20px;
+          outline: none;
+          border-radius: 4px;
+          &::placeholder {
+            color: $color-white;
+            &:focus {
+              color: transparent;
+            }
+          }
+        }
+        &__button button {
+          font-size: 18px;
+          @include font-montserrat;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          padding: 15px 20px;
+          background: linear-gradient(to right, $color-atomic_tangerine, $color-brilliant-Rose);
+          color: $color-white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
