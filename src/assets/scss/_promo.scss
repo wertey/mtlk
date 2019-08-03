@@ -1,0 +1,62 @@
+@import "_variables";
+
+.lp {
+  &-promo {
+    padding: 117px 0;
+    &-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      &-text, &-video {
+        flex: 1;
+      }
+      &-video img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      &-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-text {
+        padding-right: 90px;
+        &__title {
+          font-size: 30px;
+          line-height: 50px;
+          font-weight: bold;
+        }
+        &__desc {
+          margin-top: 20px;
+        }
+      }
+    }
+    &-advantages {
+      border-top: 1px solid $color-mercury;
+      margin-top: 120px;
+      padding-top: 86px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      &__item {
+        text-align: center;
+        &-icon img {
+          width: 30%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        &-title {
+          margin-bottom: 14px;
+        }
+        &-desc {
+          color: $color-dove-gray;
+        }
+      }
+      &__item + &__item {
+        margin-left: 40px;
+      }
+    }
+  }
+}

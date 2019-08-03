@@ -5,7 +5,9 @@
 @import "_variables";
 @import "_input";
 @import "_promo";
+@import "_description";
 
 body {
   @include font-lato;
+  color: $color-tundora;
 }
