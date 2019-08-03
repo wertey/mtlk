@@ -33,9 +33,6 @@
         color: $color-tundora;
         transition: color .2s ease-in;
         cursor: pointer;
-        a:hover {
-          color: $color-brilliant-Rose;
-        }
       }
     }
     &__copyright {
@@ -63,6 +60,8 @@
               text-decoration: none;
               text-transform: uppercase;
               color: $color-tundora;
+              transition: all .2s ease-in;
+
             }
           }
         }

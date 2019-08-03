@@ -71,11 +71,11 @@
           padding: 16px 20px;
           outline: none;
           border-radius: 4px;
+          &:focus {
+            background: rgba(255,255,255,.5);
+          }
           &::placeholder {
             color: $color-white;
-            &:focus {
-              color: transparent;
-            }
           }
         }
       }
