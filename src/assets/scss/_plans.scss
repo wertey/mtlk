@@ -21,10 +21,17 @@
       display: flex;
       justify-content: center;
       flex-direction: row;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
       &__item {
         flex: 1;
         min-width: 370px;
         padding: 60px 45px;
+        @media screen and (max-width: 767px) {
+          min-width: 100%;
+          padding: 50px 20px;
+        }
         &_title {
           font-size: 14px;
           line-height: 17px;

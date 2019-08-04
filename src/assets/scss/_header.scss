@@ -45,6 +45,10 @@
           font-size: 56px;
           line-height: 60px;
           margin-bottom: 16px;
+          @media screen and (max-width: 374px) {
+            font-size: 48px;
+            line-height: 46px;
+          }
         }
         &__subtitle {
           font-size: 18px;
@@ -52,14 +56,27 @@
           @include font-montserrat;
           margin-bottom: 44px;
           max-width: 70%;
+          @media screen and (max-width: 374px) {
+            font-size: 18px;
+            line-height: 30px;
+            max-width: 100%;
+          }
         }
       }
       &-form {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          width: 100%;
+        }
         &__input {
           padding-right: 40px;
+          @media screen and (max-width: 767px) {
+            padding-right: 0;
+            margin-bottom: 20px;
+          }
         }
         &__input input {
           border: none;
@@ -77,6 +94,9 @@
           &::placeholder {
             color: $color-white;
           }
+        }
+        &__button {
+          text-align: center;
         }
       }
     }
